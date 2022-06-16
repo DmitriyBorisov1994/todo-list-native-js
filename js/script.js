@@ -61,7 +61,7 @@ const createTodoList = () => {
       })
       todoElements = document.querySelectorAll('#todo-item')
    }
-   todosWrapper.insertAdjacentElement('afterbegin', <p>No Todos</p>)
+   todosWrapper.insertAdjacentHTML('afterbegin', "<p class='text-center p-2'>No Todos</p>")
 }
 createTodoList()
 
